@@ -10,7 +10,7 @@ const App = () => {
 
   useEffect(() => {
     // Fetch cards from the backend
-    fetch('http://localhost:5000/api/cards')
+    fetch('https://assignmentbackend-y1g3.onrender.com/api/cards')
       .then(response => response.json())
       .then(data => setCards(data))
       .catch(error => console.error('Error fetching cards:', error));
